@@ -1,14 +1,14 @@
 [features]
 seeds = false
 skip-lint = false
-[programs.localnet]
-anchor_marketplace = "mktYdagPAAnuHigRD62zLpHshZqx7vpKHjN3fN6MPjy"
+[programs.devnet]
+anchor_marketplace = "8v2rU3yAxL1qxURQcvE1mfkexMjJMKWAxwmixB33z7Xi"
 
 [registry]
 url = "https://api.apr.dev"
 
 [provider]
-cluster = "Localnet"
+cluster = "devnet"
 wallet = "/Users/ivmidable/.config/solana/id.json"
 
 [scripts]
