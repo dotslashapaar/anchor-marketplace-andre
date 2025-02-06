@@ -1,15 +1,24 @@
+[toolchain]
+
 [features]
-seeds = false
+resolution = true
 skip-lint = false
-[programs.devnet]
-anchor_marketplace = "8v2rU3yAxL1qxURQcvE1mfkexMjJMKWAxwmixB33z7Xi"
+
+[programs.localnet]
+anchor_marketplace = "8MLJwZe8HY4B54xe2hPcpf7HeDdpa1qCsnYqsTfmxqf"
 
 [registry]
 url = "https://api.apr.dev"
 
 [provider]
-cluster = "devnet"
-wallet = "/Users/ivmidable/.config/solana/id.json"
+cluster = "Localnet"
+wallet = "~/.config/solana/id.json"
 
 [scripts]
 test = "yarn run ts-mocha -p ./tsconfig.json -t 1000000 tests/**/*.ts"
+
+[test.validator]
+url = "https://api.mainnet-beta.solana.com"
+
+[[test.validator.clone]]
+address = "metaqbxxUerdq28cj1RbAWkYQm3ybzjb6a8bt518x1s"
